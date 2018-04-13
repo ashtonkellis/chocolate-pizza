@@ -1,0 +1,22 @@
+#topicon {
+  display: inline-block;
+}
+
+#delicious {
+  display: inline-block;
+}
+
+#bestfoodblog {
+  display: inline-block;
+}
+
+
+#socialmedia {
+  float: right;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.socialmedia {
+  display: inline-block;
+}
