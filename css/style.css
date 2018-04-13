@@ -83,3 +83,16 @@ li:nth-child(6) {
 .socialmedia {
   display: inline-block;
 }
+
+footer { 
+  font-size: 30px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+#bigFlex {
+  font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+  padding:1%
+
+}
