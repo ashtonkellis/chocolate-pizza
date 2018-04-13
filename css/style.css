@@ -1,0 +1,64 @@
+
+div.content {
+  width: 1024px;
+}
+
+/* PAGE TITLE AND PRINT BUTTON */
+.content h1 {
+  font-size: 40px;
+}
+
+.content h2 {
+  display: inline-block;
+}
+
+.print-button p,
+.print-button img {
+  display: inline-block;
+  font-size: 8px; 
+}
+
+.subheading {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* HERO IMAGE */
+
+#hero {
+  width: 100%;
+}
+
+/* PARAGRAPH CONTENT PARAGRAPH SPACING*/
+.content > p {
+  margin: 15px 0;
+  text-indent: 1em;
+}
+
+/* INGREDIENT CHECKLIST SECTION */
+section.ingredients {
+  background-image: url("../img/list-bg.png");
+  padding: 20px;
+  font-family: 'Caveat', cursive;
+  font-size: 35 px;
+}
+
+.ingredients ul {
+  display: flex;
+  justify-content: space-around;
+  /* flex-wrap: wrap; */
+}
+
+.ingredients li {
+  width: 45%;
+}
+
+li:nth-child(4),
+li:nth-child(6) {
+  text-decoration: line-through;
+}
+
+.ingredients li input {
+  height: 10px;
+  width: 10px;
+}
