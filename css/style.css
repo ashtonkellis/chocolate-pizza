@@ -5,7 +5,7 @@ div.content {
 
 /* PAGE TITLE AND PRINT BUTTON */
 .content h1 {
-  font-size: 30px;
+  font-size: 40px;
 }
 
 .content h2 {
@@ -14,7 +14,8 @@ div.content {
 
 .print-button p,
 .print-button img {
-  display: inline-block; 
+  display: inline-block;
+  font-size: 8px; 
 }
 
 .subheading {
@@ -28,15 +29,17 @@ div.content {
   width: 100%;
 }
 
-/* PARAGRAPH SPACING */
+/* PARAGRAPH CONTENT PARAGRAPH SPACING*/
 .content > p {
   margin: 15px 0;
+  text-indent: 1em;
 }
 
 /* INGREDIENT CHECKLIST SECTION */
 section.ingredients {
   background-image: url("../img/list-bg.png");
   padding: 20px;
+  font-family: 
 }
 
 .ingredients ul {
@@ -47,6 +50,11 @@ section.ingredients {
 
 .ingredients li {
   width: 45%;
+}
+
+li:nth-child(4),
+li:nth-child(6) {
+  text-decoration: line-through;
 }
 
 .ingredients li input {
