@@ -39,13 +39,14 @@ div.content {
 section.ingredients {
   background-image: url("../img/list-bg.png");
   padding: 20px;
-  font-family: 
+  font-family: 'Caveat', cursive;
+  font-size: 35 px;
 }
 
 .ingredients ul {
   display: flex;
   justify-content: space-around;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
 }
 
 .ingredients li {
