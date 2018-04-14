@@ -1,8 +1,69 @@
-
-div.content {
-  width: 1024px;
+body {
+  width: 960px;
 }
 
+/* JUSTINS CSS  */
+header {
+  border-style: solid;
+  border-bottom: chocolate;
+  border-width: 5px;
+  width: auto;
+  min-height: 70px;
+  z-index: 9;
+}
+
+#topicon {
+  display: inline-block;
+  position: static;
+  top: 0px;
+  z-index: 10;
+}
+
+#delicious {
+  font-size: 2em;
+  font-family: cursive;
+  vertical-align: top;
+  z-index: 11;
+}
+
+#bestfoodblog {
+  font-size: .25em;
+  font-family: sans-serif;
+  display: inline-block;
+}
+
+#toptext {
+display: inline-block;
+vertical-align: top;
+/* line-height: 50px; */
+}
+
+#socialmedia {
+  float: right;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.socialmedia {
+  display: inline-block;
+}
+
+
+#topicon {
+  display: inline-block;
+}
+
+#socialmedia {
+  float: right;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.socialmedia {
+  display: inline-block;
+}
+
+/* ASHTONS CSS */
 /* PAGE TITLE AND PRINT BUTTON */
 .content h1 {
   font-size: 40px;
@@ -46,53 +107,45 @@ section.ingredients {
 .ingredients ul {
   display: flex;
   justify-content: space-around;
-  /* flex-wrap: wrap; */
+  flex-wrap: wrap;
 }
 
 .ingredients li {
   width: 45%;
 }
 
-li:nth-child(4),
-li:nth-child(6) {
-  text-decoration: line-through;
-}
+  .li:nth-child(4),
+  li:nth-child(6) {
+    text-decoration: line-through;
+  }
 
 .ingredients li input {
   height: 10px;
   width: 10px;
-#topicon {
-  display: inline-block;
 }
 
-#delicious {
-  display: inline-block;
-}
-
-#bestfoodblog {
-  display: inline-block;
-}
-
-
-#socialmedia {
-  float: right;
-  display: inline-block;
-  vertical-align: top;
-}
-
-.socialmedia {
-  display: inline-block;
-}
+/* ROMAN'S CSS */
 
 footer { 
-  font-size: 30px;
   font-family: 'Times New Roman', Times, serif;
+  text-align: left;
 }
 
 #bigFlex {
-  font-size: 20px;
+  /* font-size: 20px; */
   display: flex;
   justify-content: space-between;
-  padding:1%
+  /* padding:1% */
+}
 
+#footer-text {
+  padding: 20px;
+}
+
+#small-logo {
+  margin-top: -30px;
+}
+
+footer img {
+  height: 50px;
 }
