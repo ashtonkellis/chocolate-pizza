@@ -9,13 +9,14 @@ body {
 
 p {
   color: grey;
+  line-height: 1.25;
 }
 
 /* HEADER */
 header {
   border-style: solid;
   padding: 20px 0 20px 0;
-  border-bottom: 10px solid lightgrey;
+  border-bottom: 15px solid lightgrey;
   /* disable due to optical illusion that makes it appear slanted. */
   /* border-image: repeating-linear-gradient(45deg, white, white 1%, grey 1%, grey 2%) 10; */
   margin-bottom: 20px;
@@ -58,7 +59,6 @@ header {
 }
 
 #socialmedia {
-  float: right;
   display: inline-block;
   vertical-align: top;
 }
@@ -91,6 +91,7 @@ header {
 
 #hero {
   width: 100%;
+  margin-top: 30px;
 }
 
 /* PARAGRAPH CONTENT PARAGRAPH SPACING*/
@@ -104,7 +105,8 @@ section.ingredients {
   background-image: url("../img/list-bg.png");
   padding: 20px;
   font-family: 'Caveat', cursive;
-  font-size: 35 px;
+  font-size: 30px;
+  color: grey;
 }
 
 .ingredients ul {
@@ -132,12 +134,16 @@ section.bio {
   justify-content:space-between;
   margin: 30px 0;
   padding-top: 20px;
-  border-top: 10px solid lightgrey;
+  border-top: 15px solid lightgrey;
 }
 
 #bio-text {
   width: 60%;
   padding: 10px;
+}
+
+.bio img {
+  height: 100px;
 }
 
 #bio-text h2 {
@@ -159,6 +165,19 @@ section.bio {
   color: white;
 }
 
-
-
 /* FOOTER */
+footer {
+  border-top: 2px solid lightgrey;
+  text-align: center;
+  color: lightgrey;
+  font-size: 10px;
+  line-height: 1.5;
+}
+
+footer img {
+  margin-top: -50px;
+}
+
+footer p:first-of-type {
+  margin-top: 20px;
+}
