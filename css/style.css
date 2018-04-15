@@ -1,29 +1,36 @@
-body {
-  width: 960px;
+* {
+  box-sizing: border-box;
 }
 
-/* JUSTINS CSS  */
+body {
+  width: 960px;
+  margin: auto;
+}
+
+p {
+  color: grey;
+  line-height: 1.25;
+}
+
+/* HEADER */
 header {
   border-style: solid;
-  border-bottom: chocolate;
-  border-width: 5px;
-  width: auto;
-  min-height: 70px;
-  z-index: 9;
+  padding: 20px 0 20px 0;
+  border-bottom: 15px solid lightgrey;
+  /* disable due to optical illusion that makes it appear slanted. */
+  /* border-image: repeating-linear-gradient(45deg, white, white 1%, grey 1%, grey 2%) 10; */
+  margin-bottom: 20px;
 }
 
 #topicon {
   display: inline-block;
   position: static;
-  top: 0px;
-  z-index: 10;
 }
 
 #delicious {
   font-size: 2em;
   font-family: cursive;
   vertical-align: top;
-  z-index: 11;
 }
 
 #bestfoodblog {
@@ -33,14 +40,12 @@ header {
 }
 
 #toptext {
-display: inline-block;
-vertical-align: top;
-/* line-height: 50px; */
+  display: inline-block;
+  vertical-align: top;
 }
 
 #socialmedia {
   float: right;
-  display: inline-block;
   vertical-align: top;
 }
 
@@ -54,7 +59,6 @@ vertical-align: top;
 }
 
 #socialmedia {
-  float: right;
   display: inline-block;
   vertical-align: top;
 }
@@ -63,20 +67,21 @@ vertical-align: top;
   display: inline-block;
 }
 
-/* ASHTONS CSS */
 /* PAGE TITLE AND PRINT BUTTON */
 .content h1 {
   font-size: 40px;
+  font-weight: 600;
 }
 
-.content h2 {
-  display: inline-block;
+.subheading p {
+  text-transform: uppercase;
 }
 
-.print-button p,
-.print-button img {
+#print-button p,
+#print-button img {
   display: inline-block;
-  font-size: 8px; 
+  font-size: 8px;
+  text-transform: uppercase;
 }
 
 .subheading {
@@ -88,6 +93,7 @@ vertical-align: top;
 
 #hero {
   width: 100%;
+  margin-top: 30px;
 }
 
 /* PARAGRAPH CONTENT PARAGRAPH SPACING*/
@@ -101,7 +107,8 @@ section.ingredients {
   background-image: url("../img/list-bg.png");
   padding: 20px;
   font-family: 'Caveat', cursive;
-  font-size: 35 px;
+  font-size: 30px;
+  color: grey;
 }
 
 .ingredients ul {
@@ -114,38 +121,65 @@ section.ingredients {
   width: 45%;
 }
 
-  .li:nth-child(4),
-  li:nth-child(6) {
-    text-decoration: line-through;
-  }
+.ingredients input:checked + label {
+  text-decoration: line-through;
+}
 
 .ingredients li input {
   height: 10px;
   width: 10px;
 }
 
-/* ROMAN'S CSS */
-
-footer { 
-  font-family: 'Times New Roman', Times, serif;
-  text-align: left;
-}
-
-#bigFlex {
-  /* font-size: 20px; */
+/* BIO SECTION */
+section.bio {
   display: flex;
-  justify-content: space-between;
-  /* padding:1% */
+  justify-content:space-between;
+  margin: 30px 0;
+  padding-top: 20px;
+  border-top: 15px solid lightgrey;
 }
 
-#footer-text {
-  padding: 20px;
+#bio-text {
+  width: 60%;
+  padding: 10px;
 }
 
-#small-logo {
-  margin-top: -30px;
+.bio img {
+  height: 100px;
+}
+
+#bio-text h2 {
+  font-size: 1.25em;
+  padding: 10px 0;
+  font-weight: 600;
+}
+
+#bio-text p {
+  padding: 10px;
+}
+
+#share-button {
+  height: 60px;
+  width: 200px;
+  margin: auto;
+  text-transform: uppercase;
+  background-color: rgb(198, 117, 36);
+  color: white;
+}
+
+/* FOOTER */
+footer {
+  border-top: 2px solid lightgrey;
+  text-align: center;
+  color: lightgrey;
+  font-size: 10px;
+  line-height: 1.5;
 }
 
 footer img {
-  height: 50px;
+  margin-top: -50px;
+}
+
+footer p:first-of-type {
+  margin-top: 20px;
 }
