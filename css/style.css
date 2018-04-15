@@ -7,21 +7,19 @@ body {
 header {
   border-style: solid;
   border-bottom;
-  padding: 20px 0;
+  padding: 20px 0 20px 0;
 }
 
 #topicon {
   display: inline-block;
   position: static;
   top: 0px;
-  z-index: 10;
 }
 
 #delicious {
   font-size: 2em;
   font-family: cursive;
   vertical-align: top;
-  z-index: 11;
 }
 
 #bestfoodblog {
@@ -37,7 +35,6 @@ header {
 
 #socialmedia {
   float: right;
-  display: inline-block;
   vertical-align: top;
 }
 
@@ -69,8 +66,8 @@ header {
   display: inline-block;
 }
 
-.print-button p,
-.print-button img {
+#print-button p,
+#print-button img {
   display: inline-block;
   font-size: 8px; 
 }
