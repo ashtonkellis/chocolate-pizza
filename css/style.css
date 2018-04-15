@@ -7,12 +7,17 @@ body {
   margin: auto;
 }
 
+p {
+  color: grey;
+}
+
 /* HEADER */
 header {
   border-style: solid;
   padding: 20px 0 20px 0;
-  border-bottom: solid grey;
-  border-image: repeating-linear-gradient(white, white 1%, grey 1%, grey 2%) 10;
+  border-bottom: 10px solid lightgrey;
+  /* disable due to optical illusion that makes it appear slanted. */
+  /* border-image: repeating-linear-gradient(45deg, white, white 1%, grey 1%, grey 2%) 10; */
   margin-bottom: 20px;
 }
 
@@ -121,28 +126,39 @@ section.ingredients {
   width: 10px;
 }
 
-/* ROMAN'S CSS */
-
-footer { 
-  font-family: 'Times New Roman', Times, serif;
-  text-align: left;
-}
-
-#bigFlex {
-  /* font-size: 20px; */
+/* BIO SECTION */
+section.bio {
   display: flex;
-  justify-content: space-between;
-  /* padding:1% */
+  justify-content:space-between;
+  margin: 30px 0;
+  padding-top: 20px;
+  border-top: 10px solid lightgrey;
 }
 
-#footer-text {
-  padding: 20px;
+#bio-text {
+  width: 60%;
+  padding: 10px;
 }
 
-#small-logo {
-  margin-top: -30px;
+#bio-text h2 {
+  font-size: 1.25em;
+  padding: 10px 0;
+  font-weight: 600;
 }
 
-footer img {
-  height: 50px;
+#bio-text p {
+  padding: 10px;
 }
+
+#share-button {
+  height: 60px;
+  width: 200px;
+  margin: auto;
+  text-transform: uppercase;
+  background-color: rgb(198, 117, 36);
+  color: white;
+}
+
+
+
+/* FOOTER */
