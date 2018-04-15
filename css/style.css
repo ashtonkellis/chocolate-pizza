@@ -1,15 +1,13 @@
 body {
   width: 960px;
+  margin: auto;
 }
 
-/* JUSTINS CSS  */
+/* HEADER */
 header {
   border-style: solid;
-  border-bottom: chocolate;
-  border-width: 5px;
-  width: auto;
-  min-height: 70px;
-  z-index: 9;
+  border-bottom;
+  padding: 20px 0;
 }
 
 #topicon {
@@ -33,9 +31,8 @@ header {
 }
 
 #toptext {
-display: inline-block;
-vertical-align: top;
-/* line-height: 50px; */
+  display: inline-block;
+  vertical-align: top;
 }
 
 #socialmedia {
@@ -63,7 +60,6 @@ vertical-align: top;
   display: inline-block;
 }
 
-/* ASHTONS CSS */
 /* PAGE TITLE AND PRINT BUTTON */
 .content h1 {
   font-size: 40px;
@@ -114,10 +110,9 @@ section.ingredients {
   width: 45%;
 }
 
-  .li:nth-child(4),
-  li:nth-child(6) {
-    text-decoration: line-through;
-  }
+.ingredients input:checked + label {
+  text-decoration: line-through;
+}
 
 .ingredients li input {
   height: 10px;
